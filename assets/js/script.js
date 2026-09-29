@@ -1,6 +1,6 @@
 // 1. Gráfico de Habilidades (Chart.js)
 const ctxSkills = document.getElementById('skillsChart').getContext('2d');
-const skillsChart = new Chart(ctxSkills, {
+const skillsChart = typeof Chart === 'function' ? new Chart(ctxSkills, {
     type: 'radar',
     data: {
         labels: ['Java', 'Kotlin', 'Ruby', 'PHP', 'HTML/CSS', 'JavaScript', 'Spring Boot', 'Python', 'PostgreSQL', 'Git/Docker'],
@@ -44,11 +44,11 @@ const skillsChart = new Chart(ctxSkills, {
             legend: { labels: { color: '#f8fafc' } }
         }
     }
-});
+}) : null;
 
 // 2. Gráfico de Impacto Caso de Estudio (Chart.js)
 const ctxImpact = document.getElementById('impactChart').getContext('2d');
-const impactChart = new Chart(ctxImpact, {
+const impactChart = typeof Chart === 'function' ? new Chart(ctxImpact, {
     type: 'bar',
     data: {
         labels: ['Antes', 'Después'],
@@ -70,7 +70,7 @@ const impactChart = new Chart(ctxImpact, {
             x: { ticks: { color: '#adb5bd' }, grid: { display: false } }
         }
     }
-});
+}) : null;
 
 // 3. Selector de idioma con preferencia persistente
 const translations = {
@@ -215,15 +215,19 @@ function translatePage(language) {
         element.textContent = language === 'en' ? element.dataset.en : element.dataset.es;
     });
 
-    skillsChart.data.labels = chartLabels[language].skills;
-    impactChart.data.labels = chartLabels[language].impact;
-    impactChart.options.plugins.title.text = chartLabels[language].impactTitle;
+    if (skillsChart && impactChart) {
+        skillsChart.data.labels = chartLabels[language].skills;
+        impactChart.data.labels = chartLabels[language].impact;
+        impactChart.options.plugins.title.text = chartLabels[language].impactTitle;
+    }
     const typingGreeting = document.getElementById('typingGreeting');
     const greeting = language === 'en' ? "Hello, I'm Antonio Badilla" : 'Hola, soy Antonio Badilla';
     typingGreeting.src = `https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&pause=1000&color=34DC5F&width=387&height=40&lines=${encodeURIComponent(greeting)}`;
     typingGreeting.alt = greeting;
-    skillsChart.update();
-    impactChart.update();
+    if (skillsChart && impactChart) {
+        skillsChart.update();
+        impactChart.update();
+    }
     updateCvDownloads(language);
     document.documentElement.lang = language;
     languageSelector.setAttribute('aria-label', language === 'en' ? 'Select language' : 'Seleccionar idioma');
@@ -231,7 +235,9 @@ function translatePage(language) {
 
 const languageSelector = document.getElementById('languageSelector');
 const savedLanguage = localStorage.getItem('portfolio-language');
-const preferredLanguage = savedLanguage || (navigator.language.toLowerCase().startsWith('en') ? 'en' : 'es');
+const preferredLanguage = ['es', 'en'].includes(savedLanguage)
+    ? savedLanguage
+    : (navigator.language.toLowerCase().startsWith('en') ? 'en' : 'es');
 languageSelector.value = preferredLanguage;
 translatePage(preferredLanguage);
 
