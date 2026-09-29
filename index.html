@@ -34,8 +34,16 @@
                     <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
                     <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#empresa-objetivo">Empresa Objetivo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#foda">FODA</a></li>
                     <li class="nav-item"><a class="nav-link" href="#caso-estudio">Caso de Estudio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item ms-lg-3 d-flex align-items-center">
+                        <select id="languageSelector" class="form-select form-select-sm bg-dark text-light border-secondary" aria-label="Seleccionar idioma">
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                        </select>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -49,14 +57,15 @@
             <div class="mb-4">
                 <img src="./assets/perfil.png" alt="Antonio Badilla" class="rounded-circle border border-3 border-info shadow-lg profile-img" width="160" height="160">
             </div>
-            <span class="badge bg-info text-dark fs-6 mb-3 px-3 py-2 rounded-pill">Desarrollador Full-Stack</span>
+            <span class="badge bg-info text-dark fs-6 mb-3 px-3 py-2 rounded-pill">Desarrollador Full-Stack | Backend</span>
             <br>
-            <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&pause=1000&color=34DC5F&width=387&height=40&lines=Hola%2C+soy+Antonio+Badilla" alt="Typing SVG" />
+            <img id="typingGreeting" src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&pause=1000&color=34DC5F&width=387&height=40&lines=Hola%2C+soy+Antonio+Badilla" alt="Hola, soy Antonio Badilla" />
             <p class="lead text-secondary mx-auto max-w-600 mb-4">
-                Desarrollador Full-Stack con experiencia en Java, Python, JavaScript, Kotlin, Ruby on Rails y PHP.
+                Desarrollador Full-Stack y Backend con experiencia en Ruby on Rails, Python, Java y JavaScript, enfocado en aplicaciones escalables, lógica de negocio, diseño de sistemas y desarrollo Android.
             </p>
             <div class="d-flex justify-content-center gap-3 flex-wrap">
                 <a href="#contacto" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane me-2"></i>Contactar</a>
+                <a id="downloadCvHero" href="./assets/CV-Antonio-Badilla.pdf" download="CV-Antonio-Badilla.pdf" class="btn btn-outline-info btn-lg"><i class="fas fa-download me-2"></i>Descargar CV</a>
                 <a href="https://github.com/DarkYusu?tab=repositories" target="_blank" class="btn btn-outline-light btn-lg"><i class="fab fa-github me-2"></i>Ver Repositorios</a>
                 <a href="https://www.linkedin.com/in/antonio-badilla/" target="_blank" class="btn btn-outline-info btn-lg"><i class="fab fa-linkedin me-2"></i>LinkedIn</a>
             </div>
@@ -78,8 +87,13 @@
                     <div class="card bg-body-tertiary border-0 h-100 p-3">
                         <div class="card-body">
                             <h5 class="card-title text-info"><i class="fas fa-briefcase me-2"></i>Experiencia profesional</h5>
-                            <p class="card-text text-secondary mb-2"><strong>Desarrollador Full Stack en Ziemax</strong> · julio a diciembre de 2024</p>
-                            <p class="card-text text-secondary mb-0">Participación en la migración de bases de datos y desarrollo de buscadores y gestores de contenido con PHP, JSON y desarrollo web.</p>
+                            <p class="card-text text-secondary mb-2"><strong>Desarrollador Full Stack en Ziemax Ediciones Ltda.</strong> · julio a diciembre de 2024</p>
+                            <ul class="text-secondary mb-0">
+                                <li>Diseño y ejecución de migraciones de bases de datos.</li>
+                                <li>Optimización del rendimiento y resolución de cuellos de botella.</li>
+                                <li>Creación de buscadores y gestores de contenido con PHP y JSON.</li>
+                                <li>Documentación técnica y colaboración con equipos multidisciplinarios.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -92,8 +106,28 @@
                                 <li class="mb-2"><strong>Full-Stack Python</strong> · Desafío Latam · 2024</li>
                                 <li class="mb-2"><strong>Ruby on Rails para emprendimientos</strong> · Desafío Latam · 2023</li>
                                 <li class="mb-2"><strong>Java y Front End</strong> · Alura · 2022-2023</li>
-                                <li><strong>Fundamentos de programación</strong> · Alura · 2022</li>
+                                <li class="mb-2"><strong>Fundamentos de programación</strong> · Alura · 2022</li>
+                                <li><strong>Técnico de Nivel Superior en Gastronomía</strong> · CFT Santo Tomás · 2016</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-lg-8">
+                    <div class="card bg-body-tertiary border-0 h-100 p-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-info"><i class="fas fa-certificate me-2"></i>Certificaciones</h5>
+                            <p class="card-text text-secondary mb-0">Desarrollo Full-Stack Python · Talento Digital (2024) | Soporte de TI de Google · Coursera (2023) | Certificación Google · Talento Digital (2023) | Java y Front-End · Alura Latam (2023)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-body-tertiary border-0 h-100 p-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-info"><i class="fas fa-language me-2"></i>Idiomas</h5>
+                            <p class="card-text text-secondary mb-0">Español nativo<br>Inglés intermedio (B1)</p>
                         </div>
                     </div>
                 </div>
@@ -135,7 +169,7 @@
                                 <div class="card-body">
                                     <i class="fas fa-tools fa-2x text-info mb-3"></i>
                                     <h5 class="card-title">Herramientas</h5>
-                                    <p class="card-text text-secondary">SOLID, POO, JUnit, Maven, Gradle, Linux</p>
+                                    <p class="card-text text-secondary">Git, Docker, SOLID, POO, JUnit, Maven, Gradle, Linux</p>
                                 </div>
                             </div>
                         </div>
@@ -266,6 +300,48 @@
                         </div>
                     </div>
 
+                    <!-- Sistema de Gestión Empresarial -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-6">
+                                <div class="card border-0 bg-dark text-light shadow">
+                                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=800&auto=format&fit=crop" class="card-img-top object-fit-cover" height="250" alt="Sistema de Gestión Empresarial">
+                                    <div class="card-body p-4">
+                                        <h4 class="card-title text-info">Sistema de Gestión Empresarial</h4>
+                                        <p class="card-text text-secondary">Sistema desarrollado en Java para gestionar procesos organizacionales con arquitectura modular y lógica de negocio mantenible.</p>
+                                        <div class="mb-3">
+                                            <span class="badge bg-secondary">Java</span>
+                                            <span class="badge bg-secondary">POO</span>
+                                            <span class="badge bg-secondary">Arquitectura modular</span>
+                                        </div>
+                                        <a href="https://github.com/DarkYusu/AE4_-_ABPRO1_-_Antonio_Badilla" target="_blank" class="btn btn-outline-info"><i class="fab fa-github me-1"></i> Ver Repositorio</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sistema de Prevención de Riesgos -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-6">
+                                <div class="card border-0 bg-dark text-light shadow">
+                                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800&auto=format&fit=crop" class="card-img-top object-fit-cover" height="250" alt="Sistema de Prevención de Riesgos">
+                                    <div class="card-body p-4">
+                                        <h4 class="card-title text-info">Sistema de Prevención de Riesgos</h4>
+                                        <p class="card-text text-secondary">Aplicación Java para gestionar prevención de riesgos mediante encapsulación, herencia y componentes escalables.</p>
+                                        <div class="mb-3">
+                                            <span class="badge bg-secondary">Java</span>
+                                            <span class="badge bg-secondary">POO</span>
+                                            <span class="badge bg-secondary">Diseño modular</span>
+                                        </div>
+                                        <a href="https://github.com/DarkYusu/PrevencionRiesgosEmpresa" target="_blank" class="btn btn-outline-info"><i class="fab fa-github me-1"></i> Ver Repositorio</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- Botones del Carrusel -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectos" data-bs-slide="prev">
@@ -281,6 +357,57 @@
                 <a href="https://github.com/DarkYusu?tab=repositories" target="_blank" class="btn btn-info text-dark fw-bold">
                     <i class="fab fa-github me-2"></i>Explorar Todos mis Repositorios en GitHub
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investigación de empresa y propuesta de valor -->
+    <section id="empresa-objetivo" class="py-5 bg-body-tertiary">
+        <div class="container py-4">
+            <h2 class="text-center text-info fw-bold mb-2" data-en="Target Company: Steam">Empresa Objetivo: Steam</h2>
+            <p class="text-center text-secondary mb-5" data-en="A global digital platform whose focus on games, community, multilingual access, and developer tools matches my professional goals.">Plataforma digital global cuyo enfoque en videojuegos, comunidad, acceso multilingüe y herramientas para desarrolladores se relaciona con mis objetivos profesionales.</p>
+
+            <div class="table-responsive mb-5">
+                <table class="table table-dark table-bordered align-middle">
+                    <tbody>
+                        <tr><th scope="row" data-en="Values and purpose">Valores y propósito</th><td data-en="I am attracted by Steam's focus on making games accessible, connecting people through community, and supporting developers.">Me atrae el enfoque de Steam en hacer accesibles los videojuegos, conectar personas mediante su comunidad y apoyar a los desarrolladores.</td></tr>
+                        <tr><th scope="row" data-en="Products and services">Productos y servicios</th><td data-en="The Steam Store, Steam Community, Steam Mobile, Steam Deck, Valve Index, and Steamworks tools for game distribution.">La tienda Steam, Steam Community, Steam Mobile, Steam Deck, Valve Index y las herramientas Steamworks para distribuir videojuegos.</td></tr>
+                        <tr><th scope="row" data-en="Technologies">Tecnologías</th><td data-en="Its ecosystem connects with my experience in backend development, APIs, databases, web technologies, mobile development, and multilingual interfaces.">Su ecosistema se relaciona con mi experiencia en desarrollo backend, APIs, bases de datos, tecnologías web, desarrollo móvil e interfaces multilingües.</td></tr>
+                        <tr><th scope="row" data-en="Work methodologies">Metodologías de trabajo</th><td data-en="Steam promotes collaboration between technical, product, design, support, and community-focused teams to deliver continuous improvements.">Steam requiere colaboración entre equipos técnicos, de producto, diseño, soporte y comunidad para entregar mejoras continuas.</td></tr>
+                        <tr><th scope="row" data-en="Innovation">Innovación</th><td data-en="Steam combines digital distribution, community features, user-generated content, multilingual access, and dedicated gaming hardware.">Steam combina distribución digital, funciones comunitarias, contenido creado por usuarios, acceso multilingüe y hardware dedicado para videojuegos.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="text-info fw-bold mb-4" data-en="How I could add value">Cómo podría aportar valor</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-4"><div class="card bg-dark text-light border-0 h-100 p-3"><div class="card-body"><h5 class="text-info" data-en="Backend and APIs">Backend y APIs</h5><p class="text-secondary mb-0" data-en="Contribute to backend features, REST APIs, business logic, and maintainable Java or Python services.">Participar en funcionalidades backend, APIs REST, lógica de negocio y servicios mantenibles en Java o Python.</p></div></div></div>
+                <div class="col-md-4"><div class="card bg-dark text-light border-0 h-100 p-3"><div class="card-body"><h5 class="text-info" data-en="Data and quality">Datos y calidad</h5><p class="text-secondary mb-0" data-en="Support database migrations, documentation, testing, and the identification of performance bottlenecks.">Apoyar migraciones de bases de datos, documentación, pruebas e identificación de cuellos de botella.</p></div></div></div>
+                <div class="col-md-4"><div class="card bg-dark text-light border-0 h-100 p-3"><div class="card-body"><h5 class="text-info" data-en="Collaboration and learning">Colaboración y aprendizaje</h5><p class="text-secondary mb-0" data-en="Collaborate with multidisciplinary teams, communicate progress clearly, and adapt quickly to new tools.">Colaborar con equipos multidisciplinarios, comunicar avances con claridad y adaptarme a nuevas herramientas.</p></div></div></div>
+            </div>
+
+            <div class="card bg-dark text-light border-info p-4">
+                <h3 class="text-info" data-en="Questions for the recruiter">Preguntas para el reclutador</h3>
+                <ol class="text-secondary mb-0">
+                    <li class="mb-2" data-en="What would be the main technical challenges for a Junior Developer during the first six months?">¿Cuáles serían los principales desafíos técnicos para un desarrollador Junior durante los primeros seis meses?</li>
+                    <li class="mb-2" data-en="How are mentoring, code reviews, and continuous learning organized within the team?">¿Cómo se organizan la mentoría, las revisiones de código y el aprendizaje continuo dentro del equipo?</li>
+                    <li data-en="Which technologies and methodologies would I use most frequently in this position?">¿Qué tecnologías y metodologías utilizaría con mayor frecuencia en este cargo?</li>
+                </ol>
+            </div>
+            <p class="text-end mt-3 mb-0"><a href="https://store.steampowered.com/about/" target="_blank" class="link-info" data-en="Research source: Steam">Fuente de investigación: Steam</a></p>
+        </div>
+    </section>
+
+    <!-- Matriz FODA opcional -->
+    <section id="foda" class="py-5">
+        <div class="container py-4">
+            <h2 class="text-center text-info fw-bold mb-2" data-en="Personal SWOT Analysis">Matriz FODA personal</h2>
+            <p class="text-center text-secondary mb-5" data-en="A self-assessment of my current profile and the opportunities I want to pursue.">Autoevaluación de mi perfil actual y de las oportunidades que quiero desarrollar.</p>
+            <div class="row g-4">
+                <div class="col-md-6"><div class="card bg-body-tertiary border-success h-100 p-3"><div class="card-body"><h5 class="text-success" data-en="Strengths">Fortalezas</h5><ul class="text-secondary"><li data-en="Full-stack and backend training with real project experience.">Formación Full-Stack y backend con experiencia en proyectos reales.</li><li data-en="Java, Python, JavaScript, Ruby on Rails, and database knowledge.">Conocimientos de Java, Python, JavaScript, Ruby on Rails y bases de datos.</li><li data-en="Object-oriented programming, SOLID principles, and modular design.">POO, principios SOLID y diseño modular.</li><li data-en="Database migration, documentation, and performance optimization experience.">Experiencia en migración de bases de datos, documentación y optimización.</li><li data-en="Proactive, self-taught, and collaborative profile.">Perfil proactivo, autodidacta y colaborativo.</li></ul></div></div></div>
+                <div class="col-md-6"><div class="card bg-body-tertiary border-warning h-100 p-3"><div class="card-body"><h5 class="text-warning" data-en="Areas for improvement">Áreas de oportunidad</h5><ul class="text-secondary"><li data-en="Gain experience with Steamworks and game distribution ecosystems.">Adquirir experiencia con Steamworks y ecosistemas de distribución de videojuegos.</li><li data-en="Strengthen cloud architecture and distributed systems knowledge.">Fortalecer arquitectura cloud y sistemas distribuidos.</li><li data-en="Improve automated testing for high-scale services.">Mejorar pruebas automatizadas para servicios de alta escala.</li><li data-en="Develop deeper knowledge of C++ and game development tools.">Desarrollar conocimientos de C++ y herramientas de videojuegos.</li><li data-en="Continue improving technical English communication.">Seguir mejorando la comunicación en inglés técnico.</li></ul></div></div></div>
+                <div class="col-md-6"><div class="card bg-body-tertiary border-danger h-100 p-3"><div class="card-body"><h5 class="text-danger" data-en="Threats">Amenazas</h5><ul class="text-secondary"><li data-en="High competition for Junior positions in global technology companies.">Alta competencia por posiciones Junior en empresas tecnológicas globales.</li><li data-en="High technical expectations in gaming and platform engineering.">Altas exigencias técnicas en plataformas y videojuegos.</li><li data-en="Rapid evolution of cloud, security, and distribution technologies.">Evolución rápida de tecnologías cloud, seguridad y distribución.</li><li data-en="Need to demonstrate experience with massive-scale platforms.">Necesidad de demostrar experiencia en plataformas de gran escala.</li><li data-en="Global recruitment processes and remote collaboration challenges.">Procesos de selección globales y desafíos de colaboración remota.</li></ul></div></div></div>
+                <div class="col-md-6"><div class="card bg-body-tertiary border-info h-100 p-3"><div class="card-body"><h5 class="text-info" data-en="Opportunities">Oportunidades</h5><ul class="text-secondary"><li data-en="Learn Steamworks, APIs, and digital game distribution workflows.">Aprender Steamworks, APIs y flujos de distribución digital de videojuegos.</li><li data-en="Apply backend and database skills to community and platform services.">Aplicar backend y bases de datos en servicios de comunidad y plataforma.</li><li data-en="Build cloud, observability, and security experience.">Desarrollar experiencia en cloud, observabilidad y seguridad.</li><li data-en="Contribute to multilingual and accessible digital experiences.">Contribuir a experiencias digitales multilingües y accesibles.</li><li data-en="Grow through open-source projects and international teams.">Crecer mediante proyectos open source y equipos internacionales.</li></ul></div></div></div>
             </div>
         </div>
     </section>
@@ -350,11 +477,13 @@
     <section id="contacto" class="py-5 bg-body-tertiary">
         <div class="container py-4 text-center">
             <h2 class="text-info fw-bold mb-2">Contacto</h2>
-            <p class="text-secondary mb-4">Ponte en contacto para oportunidades laborales.</p>
+            <p class="text-secondary mb-2">Ponte en contacto para oportunidades laborales.</p>
+            <p class="text-secondary mb-4" data-en="Available for remote Junior and Trainee opportunities in technology.">Disponible para oportunidades remotas Junior y Trainee en tecnología.</p>
             <div class="card bg-dark border-0 max-w-600 mx-auto p-4 shadow">
-                <p class="fs-5"><i class="fas fa-envelope text-info me-2"></i>abadilla2009@gmail.com</p>
+                <p class="fs-5"><i class="fas fa-envelope text-info me-2"></i><a href="mailto:abadilla2009@gmail.com" class="link-info">abadilla2009@gmail.com</a></p>
                 <p class="fs-5"><i class="fas fa-map-marker-alt text-info me-2"></i>Chile</p>
-                <div class="d-flex justify-content-center gap-3 mt-3">
+                <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
+                    <a id="downloadCvContact" href="./assets/CV-Antonio-Badilla.pdf" download="CV-Antonio-Badilla.pdf" class="btn btn-info text-dark fw-bold"><i class="fas fa-download me-1"></i>Descargar CV</a>
                     <a href="https://github.com/DarkYusu?tab=repositories" target="_blank" class="btn btn-outline-light"><i class="fab fa-github me-1"></i>Repositorios GitHub</a>
                     <a href="https://www.linkedin.com/in/antonio-badilla/" target="_blank" class="btn btn-info text-dark fw-bold"><i class="fab fa-linkedin me-1"></i>LinkedIn</a>
                 </div>

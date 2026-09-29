@@ -3,6 +3,49 @@
     background-color: rgba(33, 37, 41, 0.85) !important;
 }
 
+body {
+    color: #edf3f7 !important;
+}
+
+.text-secondary {
+    color: #b8c6d1 !important;
+}
+
+.navbar .nav-link {
+    color: #d5e0e7;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #35d6ff;
+}
+
+.card-title,
+.card h5,
+.card h4 {
+    color: #f3f7fa;
+}
+
+.table-dark {
+    --bs-table-color: #e8f0f4;
+    --bs-table-border-color: rgba(53, 214, 255, .3);
+}
+
+.navbar-nav {
+    align-items: center;
+    gap: .15rem;
+}
+
+.navbar .nav-link {
+    white-space: nowrap;
+    font-size: .92rem;
+}
+
+#languageSelector {
+    min-width: 104px;
+    cursor: pointer;
+}
+
 .hero-bg {
     background: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
 }
@@ -11,6 +54,43 @@
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
     background: rgba(15, 23, 42, 0.85);
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-bg .container {
+    animation: fade-up .8s ease-out both;
+}
+
+section > .container {
+    animation: fade-up .7s ease-out both;
+}
+
+.card {
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .2) !important;
+}
+
+.btn {
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 .35rem .8rem rgba(13, 202, 240, .2);
 }
 
 .max-w-600 {
@@ -38,6 +118,21 @@ section > .container {
 }
 
 @media (max-width: 575.98px) {
+    .navbar-nav {
+        align-items: stretch;
+        gap: .25rem;
+        padding-top: .75rem;
+    }
+
+    .navbar .nav-link {
+        padding-left: .25rem;
+    }
+
+    #languageSelector {
+        width: 100%;
+        margin-top: .5rem;
+    }
+
     section > .container {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
@@ -45,5 +140,16 @@ section > .container {
 
     .profile-summary {
         padding-left: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
     }
 }

@@ -13,6 +13,7 @@ El sitio presenta el perfil profesional, la formación tecnológica, las compete
 - Chart.js
 - Recursos visuales de Unsplash
 - Typing SVG para el encabezado
+- Selector de idioma español/inglés con preferencia persistente
 
 ## Contenido
 
@@ -21,7 +22,10 @@ El sitio presenta el perfil profesional, la formación tecnológica, las compete
 - Formación en Android, Python, Ruby on Rails, Java y Front End.
 - Dominio técnico de lenguajes, frameworks, bases de datos y herramientas.
 - Carrusel de proyectos destacados con enlaces a GitHub.
+- Investigación de empresa objetivo (Steam), aportes de valor y preguntas para entrevista.
+- Matriz FODA personal como sección PLUS.
 - Caso de estudio de SpringEduManager.
+- Descarga del CV en español e inglés según el idioma seleccionado.
 - Enlaces a GitHub y LinkedIn.
 
 ## Proyectos destacados
@@ -31,6 +35,8 @@ El sitio presenta el perfil profesional, la formación tecnológica, las compete
 - [SmartTask](https://github.com/DarkYusu/cl.js.smarttask): gestor de tareas desarrollado en Java con Maven y pruebas automatizadas.
 - [AplicacionRocola_ProjectoFinal](https://github.com/DarkYusu/AplicacionRocola_ProjectoFinal): aplicación Android en Kotlin integrada con Firebase.
 - [Alke-Wallet](https://github.com/DarkYusu/Alke-Wallet): billetera digital responsive desarrollada con HTML, CSS y JavaScript.
+- [Sistema de Gestión Empresarial](https://github.com/DarkYusu/AE4_-_ABPRO1_-_Antonio_Badilla): sistema Java con POO y arquitectura modular.
+- [Sistema de Prevención de Riesgos](https://github.com/DarkYusu/PrevencionRiesgosEmpresa): aplicación Java basada en encapsulación, herencia y componentes escalables.
 
 ## Estructura
 
@@ -43,6 +49,10 @@ Portafolio/
     │   └── style.css
     ├── js/
     │   └── script.js
+    ├── cv-antonio-badilla.html
+    ├── cv-antonio-badilla-en.html
+    ├── CV-Antonio-Badilla.pdf
+    ├── CV-Antonio-Badilla-en.pdf
     └── perfil.png
 ```
 
@@ -55,6 +65,15 @@ No requiere instalación de dependencias ni servidor backend.
 3. Para editar el proyecto, modifica `index.html`, `assets/css/style.css` o `assets/js/script.js`.
 
 El sitio carga Bootstrap, Font Awesome, Chart.js y otros recursos mediante CDN, por lo que algunas funciones visuales requieren conexión a Internet.
+
+## CV descargable
+
+- [CV en español (PDF)](assets/CV-Antonio-Badilla.pdf)
+- [CV en inglés (PDF)](assets/CV-Antonio-Badilla-en.pdf)
+- [Fuente HTML del CV en español](assets/cv-antonio-badilla.html)
+- [Fuente HTML del CV en inglés](assets/cv-antonio-badilla-en.html)
+
+El selector de idioma detecta la preferencia del navegador en la primera visita y la guarda localmente. Los botones de descarga apuntan automáticamente al PDF correspondiente.
 
 ## Enlaces
 
